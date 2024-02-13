@@ -219,7 +219,7 @@ if (birthYear <= 2000) {
 
 /////////////////////////////////////////////////////////////
 
-/* CHALLENGE #2 */
+/* CHALLENGE #2 -CODE */
 
 /* const massMark = 78;
 const heightMark = 1.69;
@@ -237,3 +237,149 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`Both are equal.`);
 } */
+
+/////////////////////////////////////////////////////////////
+
+/* Type conversion and type coercion. */
+
+/* //type conversion
+const inputYear = `1991`;
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number(`Ramji`)); //results in 'NaN'
+
+//results in 'number'. NaN means it is a number. but invalid number.
+console.log(typeof NaN);
+
+console.log(String(123), 123);
+
+//type coercion. Read the notes on type coercion in section notes.
+
+console.log(`I am ` + 23 + ` years old`);
+console.log(`23` - `10` - 3);
+console.log(`25` * `4`);
+console.log(`25` / `4`);
+
+//guess the output
+
+let n = `1` + 1; // output ->`11`
+n = n - 1; // output -> 10
+console.log(n);
+
+let n2 = 2 + 3 + 4 + `5`;
+console.log(n2);
+
+let n3 = `10` - `4` - `3` - 2 + `5`;
+console.log(n3); */
+
+/////////////////////////////////////////////////////////////
+
+/* Truthy and Falsy values */
+
+/* Five falsy values : 0, '', undefined, null , NaN. False too by default. Everything else is true.*/
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
+// console.log(Boolean({}));
+// console.log(Boolean(``));
+
+/* const money = 0;
+if (money) {
+  console.log(`Don't spend it all.`);
+} else {
+  console.log(`You should get a job!`);
+}
+
+let height = 0; //
+if (height) {
+  console.log(`Height is defined.`);
+} else {
+  console.log(`Height is UNDEFINED.`);
+}
+ */
+
+/////////////////////////////////////////////////////////////
+
+/* Equality operators == vs. === */
+//=== -> strict equality operator.
+//== -> loose equality operator.
+
+/* const age = `18`;
+if (age === 18) console.log(`You just became an adult.(strict)`);
+
+if (age == 18) console.log(`You just became an adult.(loose)`); */
+
+/* const favouriteNumber = Number(prompt(`Enter a number: `));
+// favouriteNumber = Number(favouriteNumber);
+console.log(favouriteNumber);
+console.log(typeof favouriteNumber);
+
+if (favouriteNumber === 23) {
+  console.log(`You entered : ${favouriteNumber}`);
+} else if (favouriteNumber === 20) {
+  console.log(`You entered : ${favouriteNumber}`);
+} else if (favouriteNumber === 9) {
+  console.log(`You entered : ${favouriteNumber}`);
+} else {
+  console.log(`Number is not 23 or 20 or 9.`);
+}
+
+if (favouriteNumber !== 23) console.log(`Why not 23?`); */
+
+/////////////////////////////////////////////////////////////
+
+/* Logical Operators */
+
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// const sarahShouldDrive = hasDriversLicense && hasGoodVision;
+
+/* if (sarahShouldDrive && hasGoodVision) {
+  console.log(`Sarah is able to drive`);
+} else {
+  console.log(`Sarah is not allowed to drive.`);
+} */
+
+/* const isTired = true; //C
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (sarahShouldDrive && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive`);
+} else {
+  console.log(`Sarah is not allowed to drive.`);
+}
+*/
+
+/////////////////////////////////////////////////////////////
+
+/* CHALLENGE #3 -CODE*/
+
+// let scoreDolphins = Number((96 + 108 + 89) / 3);
+// let scoreKoalas = Number((88 + 91 + 110) / 3);
+
+// console.log(
+//   typeof scoreKoalas,
+//   typeof scoreDolphins,
+//   scoreKoalas,
+//   scoreDolphins
+// );
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log(`Dolphins win the trophy`);
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log(`Koalas win the trophy`);
+// }
+// // else if(scoreKoalas === scoreDolphins)
+// // {
+// //     console.log(`Both win the trophy`);
+// // }
+// else {
+//   console.log(`Both win the trophy`);
+// }
