@@ -383,3 +383,98 @@ if (sarahShouldDrive && hasGoodVision && !isTired) {
 // else {
 //   console.log(`Both win the trophy`);
 // }
+
+/////////////////////////////////////////////////////////////
+/*The Switch Statement*/
+
+/*const day = `monday`;
+
+switch (day) {
+    case `monday`: //day === `monday`
+        console.log(`Plan course structure.`);
+        console.log(`Go to coding meetup`);
+        break;
+
+    case `tuesday`:
+        console.log(`Prepare theory videos`);
+        break;
+
+    case `wednesday`:
+    case `thursday`:
+        console.log(`Write code examples`);
+        break;
+
+    case 'friday':
+        console.log(`Record videos`);
+        break;
+
+    case 'saturday':
+    case 'sunday':
+        console.log(`Enjoy the weekend`);
+        break;
+
+    default:
+        console.log(`Not a valid day !`);
+}*/
+
+/*
+const day = `wednesday`;
+
+if(day===`monday`)
+{
+    console.log(`Plan course structure.`);
+    console.log(`Go to coding meetup`);
+}
+else if (day ===`tuesday`)
+{
+    console.log(`Prepare theory videos`);
+}
+else if(day===`wednesday` || day===`thursday`)
+{
+    console.log(`Write code examples`);
+}
+else if(day===`friday`)
+{
+    console.log(`Record videos`);
+}
+else if(day===`saturday` || day===`sunday`)
+{
+    console.log(`Enjoy the weekend`)
+}
+else
+{
+    console.log(`Not a valid day !`);
+}*/
+
+/////////////////////////////////////////////////////////////
+
+/*The conditional(Ternary) operator*/
+
+/*const drinkingAge = 15;
+drinkingAge>=18? console.log(`I like to drink wine`): console.log(`I like to drink water`);*/
+
+/*const drinkingAge = 15;
+const drinkingStatus= drinkingAge>=18? `My age is ${drinkingAge}. I like to drink wine`: `My age is ${drinkingAge}. I like to drink water`;
+console.log(drinkingStatus)*/
+
+/*const drinkingAge = 15;
+let drink2;
+if(drinkingAge>=18){
+    drink2=`wine`;
+}else{
+    drink2=`water`;
+}
+console.log(drink2);*/
+
+/*
+const drinkingAge = 15;
+console.log(`I like to drink. ${drinkingAge>=18? `My age is ${drinkingAge}. I like to drink wine`: `My age is ${drinkingAge}. I like to drink water`}`);*/
+
+/////////////////////////////////////////////////////////////
+
+/* CHALLENGE #4 -CODE*/
+
+/*
+const bill = 310;
+const tip = (bill >=50 && bill <=300) ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);*/
