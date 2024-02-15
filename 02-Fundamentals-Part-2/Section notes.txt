@@ -1,0 +1,34 @@
+"use strict";
+
+//Arrow function. It is a short form of function expression.
+const calcAge=birthYear=>2037-birthYear; //birthYear here is the parameter.
+const age=calcAge(1991);
+console.log(age);
+
+const yearsUntilRetirement =(birthYear,firstName)=>{
+    const age =2024 - birthYear;
+    const retirement=65-age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, `Ramji`));
+console.log(yearsUntilRetirement(1963, `Kumar`));
+
+in the above code.... how without variable declaration...the arguments birthYear, firstName are not showing any errors about variable declaration.
+------------------------------------
+In JavaScript, when you define parameters for a function, such as `birthYear` and `firstName` in your example, you are not required to explicitly declare them as variables within the function body. This is because function parameters are automatically treated as variables within the scope of the function.
+
+When you call a function and pass arguments to it, like `yearsUntilRetirement(1991, 'Ramji')`, JavaScript automatically assigns these values to the corresponding parameters (`birthYear` and `firstName`) within the function's scope.
+
+Here's why you're not seeing any errors related to variable declaration:
+
+1. **Function Parameters**: `birthYear` and `firstName` are parameters of the `yearsUntilRetirement` function. When you call this function with arguments, JavaScript automatically assigns these arguments to the parameters, treating them as variables within the function's scope.
+
+2. **Scope**: Parameters of a function are scoped within the function body. This means they are accessible within the function but not outside of it. JavaScript handles the scoping of function parameters internally, so you don't need to explicitly declare them as variables.
+
+3. **Strict Mode**: Even when `"use strict";` is used, function parameters are exempt from strict mode's variable declaration requirements. In strict mode, you must explicitly declare variables using `var`, `let`, or `const`, but function parameters are treated differently and don't require explicit declaration.
+
+Therefore, in your code, `birthYear` and `firstName` are treated as variables within the function `yearsUntilRetirement`, and you don't need to declare them explicitly. This behavior is part of JavaScript's language specification and is consistent across different JavaScript environments.
+
+=======================================================================================================================================================

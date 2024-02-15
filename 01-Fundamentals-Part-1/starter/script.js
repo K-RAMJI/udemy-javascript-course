@@ -59,7 +59,7 @@ console.log(typeof javascriptIsFun);
 javascriptIsFun = "YES";
 console.log(javascriptIsFun);
 
-//undefine
+//undefined
 let year;
 console.log(year);
 console.log(typeof year);
@@ -250,7 +250,7 @@ console.log(Number(inputYear) + 18);
 console.log(Number(`Ramji`)); //results in 'NaN'
 
 //results in 'number'. NaN means it is a number. but invalid number.
-console.log(typeof NaN);
+console.log(typeof NaN); // number will be the output
 
 console.log(String(123), 123);
 
