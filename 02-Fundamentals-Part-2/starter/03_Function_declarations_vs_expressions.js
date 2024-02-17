@@ -13,7 +13,7 @@ console.log(age01);
 const calcAge02=function(birthYear) //Anonymous function. Function without name.
 {
     return (2024-birthYear);
-}
+};
 const age02=calcAge02(1991);
 console.log(age01,age02);
 
