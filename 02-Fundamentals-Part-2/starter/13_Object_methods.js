@@ -29,11 +29,11 @@ const personalDetailsObject= {
 
     /*write a method called 'getSummary' and this method should return a string. which should kind of summarize the data about ramji */
 
-    //"ramji is a 33 year old developer, and he is married."
+    //"ramji is a 33-year-old developer, and he is married."
 
     getSummary : function(){
-        /*return `${this.firstname} is a ${this.calcAge()} year old ${this.profession} and his marital status is ${this.married}.`;*/
-        return `${this.firstname} is a ${this.calcAge()} year old ${this.profession} and he has ${this.hasDriverLicense? `a`:`no`} driver's license.`;
+        /*return `${this.firstname} is a ${this.calcAge()}-year-old ${this.profession} and his marital status is ${this.married}.`;*/
+        return `${this.firstname} is a ${this.calcAge()}-year-old ${this.profession} and he has ${this.hasDriverLicense? `a`:`no`} driver's license.`;
         
     }
 
