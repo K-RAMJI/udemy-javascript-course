@@ -1,1 +1,85 @@
-Revise data types from section-1 to understand the behavior or undefined and null.
+#1: Revise data types from section-1 to understand the behavior of undefined and null.
+
+#2: In JavaScript, when you use a variable without declaring it using `var`, `let`, or `const`, the variable is implicitly declared as a global variable if it's used in the global scope (outside of any function). If it's used inside a function without being declared, it becomes a global variable if there's no variable with the same name declared in the function's scope.
+
+ In your code snippet:
+ ```javascript
+ markBMI = markMass / markHeight**2;
+ johnBMI = johnMass / johnHeight**2;
+ ```
+ `markBMI` and `johnBMI` are being assigned values without being explicitly declared using `var`, `let`, or `const`. JavaScript treats them as global variables. As long as there are no strict mode directives (`'use strict';`) in your code, JavaScript will not throw an error when assigning values to variables that haven't been explicitly declared.
+
+ However, relying on implicit global variables can lead to unexpected behavior and is generally considered bad practice. It's recommended to always explicitly declare variables using `var`, `let`, or `const` to avoid unintentional global variables and to make your code more readable and maintainable.
+                                                                      ------------------
+#In JavaScript, when you assign a value to a variable without declaring it using `var`, `let`, or `const`, JavaScript assumes that you want to create a global variable if that assignment happens in the global scope (outside of any function).
+
+  Let's break down your code:
+
+  ```javascript
+  markBMI = markMass / markHeight**2;
+  johnBMI = johnMass / johnHeight**2;
+  ```
+
+  In this code, you're assigning values to `markBMI` and `johnBMI` without declaring them first. JavaScript allows this, but it's not considered a good practice because it can lead to unintentional global variables.
+
+  Here's what happens:
+
+  1. JavaScript looks for `markBMI` and `johnBMI` in the current scope. Since they're not declared locally (within a function) and there's no declaration globally (at the top level of the script), JavaScript creates these variables as global variables.
+
+  2. JavaScript then assigns values to these global variables.
+
+  This behavior can lead to unexpected results, especially in larger codebases where it might be hard to track all the global variables. To avoid this, it's recommended to always declare variables explicitly using `var`, `let`, or `const`. For example:
+
+  ```javascript
+  var markBMI = markMass / markHeight**2;
+  var johnBMI = johnMass / johnHeight**2;
+  ```
+
+  Or using `let` or `const` if you want to limit the scope of the variables:
+
+  ```javascript
+  let markBMI = markMass / markHeight**2;
+  let johnBMI = johnMass / johnHeight**2;
+  ```
+
+  By explicitly declaring variables, you make your code more readable and prevent unintended consequences caused by implicit global variables.
+
+#3 ### Arithmetic Operators
+   1. `+` (Addition)
+      - Converts operands to numbers and performs addition. If one of the operands is a string, it will perform concatenation.
+   2. `-` (Subtraction), `*` (Multiplication), `/` (Division), `%` (Modulus)
+      - Converts operands to numbers and performs the respective arithmetic operation.
+
+   ### Assignment Operators
+   1. `=` (Assignment)
+      - Assigns the value on the right to the variable on the left without any conversion.
+
+   ### Comparison Operators
+   1. `==` (Equality), `!=` (Inequality)
+      - Converts operands to the same type and then compares them. May involve type coercion.
+   2. `===` (Strict equality), `!==` (Strict inequality)
+      - Compares operands without type conversion. They are only considered equal if they are of the same type and have the same value.
+
+   ### Logical Operators
+   1. `&&` (Logical AND), `||` (Logical OR)
+      - Does not perform any type conversion. Returns the operand that determined the result without converting it.
+   2. `!` (Logical NOT)
+      - Returns `true` if the operand is `false`, and vice versa. Does not perform type conversion.
+
+   ### Bitwise Operators
+   1. `&` (Bitwise AND), `|` (Bitwise OR), `^` (Bitwise XOR)
+      - Converts operands to 32-bit integers and performs bitwise operations.
+   2. `~` (Bitwise NOT), `<<` (Left shift), `>>` (Right shift), `>>>` (Unsigned right shift)
+      - Converts operands to 32-bit integers and performs bitwise operations.
+
+   ### Unary Operators
+   1. `+` (Unary plus), `-` (Unary minus), `++` (Increment), `--` (Decrement)
+      - Converts the operand to a number before performing the operation. The `++` and `--` operators increment or decrement the operand by 1, respectively.
+
+   ### Conditional (Ternary) Operator
+   1. `? :` (Conditional)
+      - Evaluates the condition. If true, returns the value before `:`; otherwise, returns the value after `:`. It does not involve any conversion itself.
+
+   ### String Operators
+   1. `+` (Concatenation)
+      - Converts non-string operands to strings and concatenates them.
