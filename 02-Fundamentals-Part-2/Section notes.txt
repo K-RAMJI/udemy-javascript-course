@@ -32,3 +32,27 @@ Here's why you're not seeing any errors related to variable declaration:
 Therefore, in your code, `birthYear` and `firstName` are treated as variables within the function `yearsUntilRetirement`, and you don't need to declare them explicitly. This behavior is part of JavaScript's language specification and is consistent across different JavaScript environments.
 
 =======================================================================================================================================================
+just tell me when return is need and when return is not needed in arrow function expression
+------------------
+In arrow functions, the use of the `return` keyword depends on whether the function body consists of a single expression or multiple statements:
+
+1. **Return not needed (implicit return)**:
+   - If the function body consists of a single expression, the `return` keyword is not needed. The result of the expression is automatically returned.
+   - Example:
+     ```javascript
+     const double = x => x * 2;
+     ```
+   - Here, `x * 2` is a single expression. The result of this expression (the doubled value of `x`) is automatically returned without explicitly using `return`.
+
+2. **Return needed (explicit return)**:
+   - If the function body contains multiple statements or requires more complex logic, you need to use the `return` keyword explicitly.
+   - Example:
+     ```javascript
+     const sum = (a, b) => {
+       const result = a + b;
+       return result;
+     };
+     ```
+   - Here, the function body contains multiple statements (`const result = a + b;` and `return result;`). To return the value of `result`, the `return` keyword is used explicitly.
+
+In summary, if the arrow function has a concise body consisting of a single expression, you can omit the `return` keyword, as the result of the expression will be implicitly returned. However, if the function body requires multiple statements or more complex logic, you need to use `return` explicitly to return a value.
