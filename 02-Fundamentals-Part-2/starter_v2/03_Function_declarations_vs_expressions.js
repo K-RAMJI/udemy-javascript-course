@@ -1,24 +1,24 @@
 "use strict";
 
 //function declaration
-function calcAge1(birthYear){
-    return 2024-birthYear;
+function calcAge1(birthYear) {
+    return 2024 - birthYear;
 }
 
-const age1=calcAge1(1991);
+const age1 = calcAge1(1991);
 console.log(age1);
 
 //function expression
 
 /*here function is without a name which is also called an anonymous function. Also, this function is an expression, and it produces a value which is then stored in calcAge2 variable.*/
 
-const calcAge2=function(birthYear){
-    return 2024-birthYear;
+const calcAge2 = function (birthYear) {
+    return 2024 - birthYear;
 }// here this function is just a value and we can store it in a variable.
 
-const age2= calcAge2(1991);
+const age2 = calcAge2(1991);
 
-console.log(age1,age2);
+console.log(age1, age2);
 
 /*Important note
 * Difference between function declaration and function expression:
@@ -47,19 +47,19 @@ console.log(age1,age2);
 
 
 //function declaration
-function percentageOfWorld1(population,country){
-    const average=(population/7900)*100;
+function percentageOfWorld1(population, country) {
+    const average = (population / 7900) * 100;
     return `${country} has ${population} million people, so it's about ${average.toFixed(1)}% of the world population.`
 }
 
-console.log(percentageOfWorld1(1441,'China'));
+console.log(percentageOfWorld1(1441, 'China'));
 console.log(percentageOfWorld1(331, 'United States'));
 console.log(percentageOfWorld1(213, 'Brazil'));
 console.log(percentageOfWorld1(60, 'Spain'));
 
 //function expression
-const percentageOfWorld2=function(population,country){
-    const average=(population/7900)*100;
+const percentageOfWorld2 = function (population, country) {
+    const average = (population / 7900) * 100;
     return `${country} has ${population} million people, so it's about ${average.toFixed(1)}% of the world population.`
 };
 

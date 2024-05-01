@@ -11,20 +11,20 @@ logger();*/
 
 /*we specify what is called parameters inside the parenthesis and parameters are like variables that are specific to this function. the parameters will get defined once the function is called. they represent the input data of this function.*/
 
-function fruitProcessor(apples, pomegranates){
+function fruitProcessor(apples, pomegranates) {
     console.log(apples, pomegranates); //using parameters like normal variables.
     /*const juice=`Juice with ${apples} apples and ${pomegranate} pomegranates.`;
     return juice;*/
     return `Juice with ${apples} apples and ${pomegranates} pomegranates.`;
 }
 
-const appleJuice=fruitProcessor(5, 0);
+const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 
-const pomegranateJuice=fruitProcessor(0,10);
+const pomegranateJuice = fruitProcessor(0, 10);
 console.log(pomegranateJuice);
 
-const fruitMixer=fruitProcessor(2,4)
+const fruitMixer = fruitProcessor(2, 4)
 console.log(fruitMixer); //this is built-in function
 
 const num = Number('23'); //this is also a built-in function.
@@ -56,13 +56,12 @@ const num = Number('23'); //this is also a built-in function.
 */
 
 
-
-function describeCountry(country, population, capitalCity){
+function describeCountry(country, population, capitalCity) {
     return `${country} has ${population} million people and its capital city is ${capitalCity}`
 }
 
-let usDesc=describeCountry('US', 331, `Washington, D.C.`);
-let chinaDesc=describeCountry('China', 1410, `Beijing`);
-let brazilDesc=describeCountry('Brazil', 213, `Brasilia`);
+let usDesc = describeCountry('US', 331, `Washington, D.C.`);
+let chinaDesc = describeCountry('China', 1410, `Beijing`);
+let brazilDesc = describeCountry('Brazil', 213, `Brasilia`);
 
 console.log(usDesc + '\n' + chinaDesc + '\n' + brazilDesc);

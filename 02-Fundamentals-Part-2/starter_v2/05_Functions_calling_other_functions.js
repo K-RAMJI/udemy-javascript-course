@@ -1,17 +1,17 @@
 "use strict";
 
-const fruitChopper=function(fruit){
+const fruitChopper = function (fruit) {
     return fruit * 4;
 };
 
-const fruitMixer=function(apples,pomegranates){
+const fruitMixer = function (apples, pomegranates) {
     //calling fruitChopper function from fruitMixer function.
-    const applePieces=fruitChopper(apples);
-    const pomegranatesPieces=fruitChopper(pomegranates);
+    const applePieces = fruitChopper(apples);
+    const pomegranatesPieces = fruitChopper(pomegranates);
 
     return `Juice made with ${applePieces} pieces of apples and ${pomegranatesPieces} pieces of pomegranates.`;
 };
-console.log(fruitMixer(4,5));
+console.log(fruitMixer(4, 5));
 
 //Assignment
 
@@ -24,10 +24,10 @@ console.log(fruitMixer(4,5));
     Call describePopulation with data for 3 countries of your choice.
 */
 
-const percentageOfWorld1 =  (population) =>(population / 7900) * 100;
+const percentageOfWorld1 = (population) => (population / 7900) * 100;
 
-function describePopulation(population, country){
-    const average=percentageOfWorld1(population);
+function describePopulation(population, country) {
+    const average = percentageOfWorld1(population);
     return `${country} has ${population} million people, so it's about ${average.toFixed(1)}% of the world population.`
 }
 

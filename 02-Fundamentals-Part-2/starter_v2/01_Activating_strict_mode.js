@@ -1,12 +1,12 @@
 "use strict";
 
-let hasDriversLicense=true;
-const passedTest=false;
+let hasDriversLicense = true;
+const passedTest = false;
 
-if(passedTest){
-  /*  hasDriverLicense=true; //making an error to understand strict mode usage.*/
+if (passedTest) {
+    /*  hasDriverLicense=true; //making an error to understand strict mode usage.*/
 }
-if(hasDriversLicense){
+if (hasDriversLicense) {
     console.log(`I can drive.`);
 }
 

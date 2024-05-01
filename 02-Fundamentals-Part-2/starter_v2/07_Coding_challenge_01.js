@@ -45,12 +45,12 @@ function checkWinner(avgSharks, avgRockers) {
         return `Sharks win. ${avgSharks} vs ${avgRockers * 2}`;
     } else if (avgRockers >= (avgSharks * 2)) {
         return `Rockers win. ${avgRockers}  vs ${avgSharks * 2}`;
-    }else{
+    } else {
         return `No team wins.`
     }
 }
 
-let test_data01=checkWinner(calcAvg(44,23,71), calcAvg(65,54,49));
-let test_data02=checkWinner(calcAvg(85,54,41), calcAvg(23,34,27));
+let test_data01 = checkWinner(calcAvg(44, 23, 71), calcAvg(65, 54, 49));
+let test_data02 = checkWinner(calcAvg(85, 54, 41), calcAvg(23, 34, 27));
 
 console.log(test_data01 + '\n' + test_data02);
