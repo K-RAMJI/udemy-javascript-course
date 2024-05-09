@@ -75,13 +75,13 @@ const myCountry = {
     neighbours: ['Norway', 'Sweden', 'Russia'],
     // neighbours: [],
 
-    describe:function(){
+    describe: function () {
         return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
     },
 
-    checkIsland:function(){
-        this.isIsland=(this.neighbours.length===0);
-        return (this.isIsland)?`It is true that there are no neighbouring countries.It is an island`:`There are neighbouring countries. It is not an island.`;
+    checkIsland: function () {
+        this.isIsland = (this.neighbours.length === 0);
+        return (this.isIsland) ? `It is true that there are no neighbouring countries.It is an island` : `There are neighbouring countries. It is not an island.`;
     }
 };
 
